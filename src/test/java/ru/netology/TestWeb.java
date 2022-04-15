@@ -6,15 +6,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-<<<<<<< HEAD
 import org.openqa.selenium.chrome.ChromeDriver;
 
-=======
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.util.List;
->>>>>>> 1e7056a (Write Test)
 
 public class TestWeb {
     private WebDriver driver;
@@ -25,7 +18,6 @@ public class TestWeb {
         System.setProperty("webdriver.chrome.driver", "./driver/win/chromedriver.exe");
     }
 
-<<<<<<< HEAD
     @BeforeEach
     public void setUp() {
         driver = new ChromeDriver();
@@ -34,16 +26,6 @@ public class TestWeb {
 
 
     @Test
-=======
-        @BeforeEach
-                public void setUp() {
-            driver = new ChromeDriver();
-        }
-
-
-
-        @Test
->>>>>>> 1e7056a (Write Test)
 
     public void shouldSendForm ()  {
         driver.get("http://localhost:9999/");
@@ -55,7 +37,6 @@ public class TestWeb {
         String expected = "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
 
 
-<<<<<<< HEAD
     }
 
     @AfterEach
@@ -64,18 +45,5 @@ public class TestWeb {
         driver = null;
     }
 }
-=======
-        }
-
-        @AfterEach
-         public void tearDown () {
-             driver.quit();
-            driver = null;
-     }
-        }
-
-
-
->>>>>>> 1e7056a (Write Test)
 
 
